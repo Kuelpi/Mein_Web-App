@@ -39,7 +39,7 @@ Eine webbasierte Anwendung zur Unterstützung der Nachsorge und Prävention von 
 ### 1. Repository klonen
 
 ```bash
-git clone [Repository-URL]
+git clone https://github.com/Kuelpi/Mein_Web-App.git
 cd nachsorge-assist
 ```
 
