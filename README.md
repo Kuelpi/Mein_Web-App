@@ -49,15 +49,8 @@ cd nachsorge-assist
 # In das Backend-Verzeichnis wechseln
 cd backend
 
-# Umgebungsvariablen einrichten
-cp .env.example .env
-# Bearbeiten Sie die .env-Datei mit Ihren Einstellungen
-
 # Abhängigkeiten installieren
 npm install
-
-# Datenbank initialisieren (falls zutreffend)
-npm run migrate
 
 # Entwicklungsserver starten
 npm run dev
@@ -69,10 +62,6 @@ npm run dev
 # In das Frontend-Verzeichnis wechseln
 cd ../frontend
 
-# Umgebungsvariablen einrichten
-cp .env.example .env.local
-# Bearbeiten Sie die .env.local-Datei mit Ihrer API-URL
-
 # Abhängigkeiten installieren
 npm install
 
@@ -82,68 +71,6 @@ npm start
 
 Die Anwendung ist nun unter `http://localhost:3000` verfügbar.
 
-## 🔧 Konfiguration
-
-### Backend Umgebungsvariablen
-
-Erstellen Sie eine `.env` Datei im `backend` Verzeichnis mit folgenden Variablen:
-
-```
-PORT=5000
-NODE_ENV=development
-# Fügen Sie hier Ihre spezifischen Umgebungsvariablen hinzu
-```
-
-### Frontend Konfiguration
-
-Die Frontend-Konfiguration erfolgt über die `.env.local` Datei im `frontend` Verzeichnis:
-
-```
-REACT_APP_API_URL=http://localhost:5000/api
-# Weitere Frontend-spezifische Umgebungsvariablen
-```
-
-## 🧪 Tests ausführen
-
-### Backend Tests
-
-```bash
-cd backend
-npm test
-```
-
-### Frontend Tests
-
-```bash
-cd frontend
-npm test
-```
-
-## 🚀 Produktions-Build
-
-### Frontend Build
-
-```bash
-cd frontend
-npm run build
-```
-
-### Backend Starten (Produktion)
-
-```bash
-cd backend
-npm run build
-npm start
-```
-
 ## 📄 Lizenz
 
 Dieses Projekt ist lizenziert unter der MIT-Lizenz - siehe die [LICENSE](LICENSE) Datei für Details.
-
-## 🤝 Mitwirken
-
-Beiträge sind willkommen! Bitte lesen Sie unsere [CONTRIBUTING](CONTRIBUTING.md) Richtlinien für Details zu unserem Verhaltenskodex und dem Prozess für das Einreichen von Pull-Requests.
-
-## 📧 Kontakt
-
-Bei Fragen oder Anregungen wenden Sie sich bitte an [Ihre E-Mail-Adresse].
